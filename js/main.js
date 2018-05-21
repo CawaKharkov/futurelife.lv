@@ -22,10 +22,12 @@
   // Menu slider
   var menuSwiper = new Swiper('.menu-swiper-global', {
     speed: 700,
-    loop: true,
+    // loop: true,
     slideToClickedSlide: true,
-    slidesPerView: 'auto',
+    slidesPerView: 5,
     allowTouchMove: true,
+    centeredSlides: true,
+    freeMode: true,
   });
 
   gSwiper.on('slideChange', function () {
