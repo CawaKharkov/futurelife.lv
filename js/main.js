@@ -24,7 +24,7 @@
     speed: 700,
     // loop: true,
     slideToClickedSlide: true,
-    slidesPerView: 5,
+    slidesPerView: 'auto',
     allowTouchMove: true,
     centeredSlides: true,
     freeMode: true,
