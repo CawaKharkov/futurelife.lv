@@ -1,0 +1,27 @@
+.Menu {
+    display: flex;
+    width: 100%;
+
+    &-Item {
+        flex: 1;
+
+        &__Link {
+            align-items: center;
+            display: flex;
+            font-family: Arial Narrow, sans-serif;
+            font-weight: bold;
+            justify-content: center;
+            line-height: 1.8;
+            text-align: center;
+
+            &:hover {
+                background-color: rgb(0, 120, 255);
+                color: #fff;
+            }
+        }
+
+        &__Text {
+            padding: 0 .5rem;
+        }
+    }
+}
