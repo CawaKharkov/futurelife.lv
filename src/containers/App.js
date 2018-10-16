@@ -7,6 +7,10 @@ import ThirdContent from '../components/ThirdContent';
 import FourthContent from '../components/FourthContent';
 import FifthContent from '../components/FifthContent';
 import SixthContent from '../components/SixthContent';
+import SeventhContent from '../components/SeventhContent';
+import EighthContent from '../components/EighthContent';
+import NinthContent from '../components/NinthContent';
+import TenthContent from '../components/TenthContent';
 
 class App extends Component {
     render() {
@@ -24,6 +28,10 @@ class App extends Component {
                 <VideoBackground/>
 
                 <SixthContent/>
+                <SeventhContent/>
+                <EighthContent/>
+                <NinthContent/>
+                <TenthContent/>
             </Page>
         );
     }

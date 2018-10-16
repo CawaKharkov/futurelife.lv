@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import Container from './Container';
-import second from '../assets/images/second.png';
 import bg from '../assets/images/second-bg.png';
 import './SecondContent.less';
 
@@ -21,7 +20,9 @@ class SecondContent extends Component {
                             </div>
                         </div>
 
-                        <img className='SecondContent-Image' src={second} alt={this.props.content.title[this.props.locale]} width={362} height={381}/>
+                        <img className='SecondContent-Image'
+                             src={this.props.content.image}
+                             alt={this.props.content.title[this.props.locale]} width={362} height={381}/>
                     </div>
                 </Container>
             </div>

@@ -1,31 +1,17 @@
 import React, {Component} from 'react';
-import YouTube from 'react-youtube';
 import './VideoBackground.less';
+import video1 from '../assets/videos/1.mp4';
 
 class VideoBackground extends Component {
     render() {
         return (
             <div className='VideoBackground'>
                 <div className='VideoBackground-Video'>
-                    <YouTube 
-                        videoId='tgbNymZ7vqY'
-                        opts={{
-                            height: '100%',
-                            width: '100%',
-                            playerVars: {
-                                autohide: 1,
-                                autoplay: 1,
-                                controls: 0,
-                                html5: 1,
-                                loop: 1,
-                                playsinline: 1,
-                                rel: 0,
-                                showinfo: 0,
-                                theme: 'dark',
-                                vq: 320,
-                                wmode: 'opaque',
-                            },
-                        }}
+                    <video className='VideoBackground-VideoElement'
+                           src={video1}
+                           autoPlay
+                           loop
+                           muted
                     />
                 </div>
 

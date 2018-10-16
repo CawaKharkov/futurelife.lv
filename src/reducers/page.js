@@ -1,5 +1,11 @@
 import elkor from '../assets/images/elkor.png';
 import book from '../assets/images/book.jpg';
+import second from '../assets/images/second.png';
+import eighth from '../assets/images/eighth.jpg';
+import gallery1 from '../assets/gallery/1.jpg';
+import gallery2 from '../assets/gallery/2.jpg';
+import gallery3 from '../assets/gallery/3.jpg';
+import gallery4 from '../assets/gallery/4.jpg';
 
 const initialState = {
     locale: sessionStorage.getItem('locale') || 'ru',
@@ -37,7 +43,7 @@ const initialState = {
                 ru: 'Контакты',
                 lv: 'Kontakti',
             },
-        }, 
+        },
         {
             title: {
                 ru: 'Партнеры',
@@ -48,7 +54,7 @@ const initialState = {
     socials: [
         {
             title: 'Facebook',
-        }, 
+        },
         {
             title: 'Instagram',
         },
@@ -90,6 +96,7 @@ const initialState = {
                 ru: 'Вы попадете в удивительный мир, населенный неземными существами, волшебными цветами и инопланетными растениями, с которыми с удовольствием будут взаимодействовать как дети, так и взрослые.',
                 lv: 'Jūs nokļūsiet neparastā pasaulē, kur mīt citplanētieši, fantastiskas puķes un svešzemju augi, ko būs aizraujoši iepazīt gan bērniem, gan pieaugušajiem.',
             },
+            image: second,
         },
         third: {
             title: {
@@ -103,6 +110,28 @@ const initialState = {
 <p>Izstādē "Nākotne tagad!" esam apvienojuši vismodernākās interaktīvās tehnoloģijas mākslas objektos un instalācijās, ar kurām iespējams un vēlams mijiedarboties. 3D modelēšana, interaktīvās projekcijas, virtuālā un papildinātā realitāte – izmantojam šīs tehnoloģijas, lai dotu izstādes viesiem vienotu radošu impulsu.</p>`,
             },
             book,
+        },
+        fourth: {
+            gallery: [
+                {
+                    src: gallery1,
+                },
+                {
+                    src: gallery2,
+                },
+                {
+                    src: gallery3,
+                },
+                {
+                    src: gallery4,
+                },
+            ],
+        },
+        fifth: {
+            title: {
+                ru: 'Объекты',
+                lv: 'Objekti',
+            },
         },
         sixth: {
             title: {
@@ -233,6 +262,78 @@ const initialState = {
                     ],
                 },
             ],
+        },
+        seventh: {
+            title: {
+                ru: 'Информация',
+                lv: 'Informācija',
+            },
+            content: {
+                ru: `<p><b>Future Live!</b> - семейная выставка! Это означает, что ее можно и нужно посещать всей семьей. В пространстве выставки дети и взрослые найдут для себя интересные активности и смогут весело и полезно провести время.</p>
+<p>Выставка выполнена в формате Edutainment - наши инсталляции носят не только развлекательный характер, но демонстрируют работу мира вокруг нас, стимулируют кооперацию и формируют креативное мышление.</p>`,
+                lv: `<p>"Nākotne tagad!" ir ģimenes izstāde! Tas nozīmē, ka to iespējams un vēlams apmeklēt kopā ar visu ģimeni. Šajā izstādē gan bērni, gan pieaugušie varēs atrast kādu saistošu aktivitāti un jautri un lietderīgi pavadīt laiku.</p>
+<p>Izstāde veidota Edutainment stilā (izklaidējoši izglītojošā) – instalācijas ne tikai izklaidē, bet arī demonstrē apkārtējās pasaules darbības principus, stimulē spēju sadarboties ar citiem un attīsta radošo domāšanu.</p>`,
+            },
+            hoursTitle: {
+                ru: 'Время работы',
+                lv: 'Darba laiks',
+            },
+            hours: {
+                ru: `<p>Понедельник - пятница 14:00-20:00<br/>
+Выходные 11:00-20:00</p>
+<p>На посещение центра рекомендуется запланировать 2-3 часа.<br/>
+Вход закрывается за час до окончания работы выставки.</p>
+<p>Для групп есть возможность посетить выставку вне рабочего времени, предварительно договорившись по телефону 26446696.</p>`,
+                lv: `<p>Pirmdiena-piektdiena 14:00-20:00<br/>
+Brīvdienas 11:00-20:00</p>
+<p>Bērnu un skolu grupām ir iespēja apmeklēt izstādi ārpus darba laika, iepriekš sazinātos pa tālr. 26446696</p>
+<p>Centra apmeklējumam ieteicams paredzēt 2-3 stundas.</p>
+<p>Leeja aizverās vienu stundu pirms izstādes darba laika baigam..</p>`,
+            },
+        },
+        eighth: {
+            title: {
+                ru: 'Праздники',
+                lv: 'Svinības',
+            },
+            content: {
+                ru: 'Мы приглашаем Вас отметить Дни рождения, Семейные праздники и другие важные для Вас события в нашем интерактивном пространстве! Мы организуем для Вас специальную программу! Пожалуйста, позвоните по телефону 26446696 и мы расскажем как сможем Вас удивить!',
+                lv: 'Aicinām Jūs svinēt dzimšanas dienas, ģimenes svētkus un citus svarīgus notikumus mūsu interaktīvajā telpā! Izstrādāsim Jums īpašu programmu! Lūdzu, zvaniet uz telefona numuru 26446696, un mēs pastāstīsim, kā varam Jūs pārsteigt!',
+            },
+            image: eighth,
+        },
+        ninth: {
+            title: {
+                ru: 'Партнеры',
+                lv: 'Patrneri',
+            },
+        },
+        tenth: {
+            title: {
+                ru: 'Интерактивная выставка для всей семьи!',
+                lv: 'Interaktīva izstāde visai ģimenei!',
+            },
+            submit: {
+                ru: 'Купить билеты',
+                lv: 'Pirkt biļeti',
+            },
+            map: {
+                center: [56.962917, 24.200530],
+                position: [56.973881, 24.162786],
+                info: {
+                    ru: 'LEVEL8 - новое многофункциональное интерактивное выставочное пространство в центре Риги. Место уже запомнилось жителям города, как площадка для проведения выставки Бал роботов и трансформируется в постоянно действующий выставочный проект от продюсеров проектов Titanic: The exhibition и Бал роботов в Латвии',
+                    lv: 'LEVEL8 – jauna daudzfunkcionāla interaktīva izstāžu telpa Rīgas centrā. Pilsētas iedzīvotājiem tā jau pazīstama kā izstādes "Robotu balle" norises vieta, un nu jau tajā pastāvīgi aplūkojami izstāžu projekti, ko veido "Titāniks: izstāde" un "Robotu balle" organizatori Latvijā.',
+                },
+                address: {
+                    ru: `<p>Elkor Plaza Латвия, Рига,<br/>
+Адрес: Бривибас 201<br/>
+Телефон: <a href="callto:+37126446696">+37126446696</a></p>`,
+                    lv: `<p>Elkor Plaza<br/>
+Latvija, Rīga,<br/>
+Adrese: Brīvības iela 201<br/>
+Telefons: <a href="+37126446696">+37126446696</a></p>`,
+                },
+            },
         },
     },
 };
